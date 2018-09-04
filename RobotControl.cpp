@@ -43,8 +43,8 @@ int main(/* int argc, char **argv */){
 	//ROS_INFO_STREAM("THIS WORKS!");
 
 	//Initialzation of constants
-	double d = 0.0675; //distance between wheels (not correct value)
-	double r = 0.03; //radius of wheels (not correct value)
+	double d = 0.08; //distance between wheels (not correct value)
+	double r = 0.0342; //radius of wheels (not correct value)
 
 	double Kp_gamma = 5;
 	double Ki_gamma = 0.5;
