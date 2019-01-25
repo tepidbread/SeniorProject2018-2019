@@ -1,0 +1,76 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(implement_test)
+
+## Compile as C++11, supported in ROS Kinetic and newer
+ add_compile_options(-std=c++11)
+
+## Find catkin macros and libraries
+## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
+## is used, also find other catkin packages
+find_package(catkin REQUIRED COMPONENTS
+  genmsg
+  message_generation
+  message_runtime
+  roscpp
+  rospy
+  std_msgs
+)
+
+################################################
+## Declare ROS messages, services and actions ##
+################################################
+
+################################################
+## Declare ROS dynamic reconfigure parameters ##
+################################################
+
+###################################
+## catkin specific configuration ##
+###################################
+## The catkin_package macro generates cmake config files for your package
+## Declare things to be passed to dependent projects
+## INCLUDE_DIRS: uncomment this if your package contains header files
+## LIBRARIES: libraries you create in this project that dependent projects also need
+## CATKIN_DEPENDS: catkin_packages dependent projects also need
+## DEPENDS: system dependencies of this project that dependent projects also need
+catkin_package(
+  INCLUDE_DIRS include
+#  LIBRARIES implement_test
+#  CATKIN_DEPENDS genmsg message_generation message_runtime roscpp rospy std_msgs
+#  DEPENDS system_lib
+)
+
+###########
+## Build ##
+###########
+
+
+#set (RC_CAPE_ROOT /opt/source/Robotics_Cape_Installer)
+#set (RC_CAPE_INCLUDE_DIRS $(RC_CAPE_ROOT)/library)
+#set (RC_CAPE_LIBRARY_DIRS $(RC_CAPE_ROOT)/library)
+
+## Specify additional locations of header files
+## Your package locations should be listed before other locations
+include_directories(
+  include
+  ${catkin_INCLUDE_DIRS}
+ #${RC_CAPE_INCLUDE_DIRS}
+)
+
+
+## Declare a C++ executable
+ add_executable(testBBBlueControl src/testBBBlueControl.cpp)
+ target_link_libraries(testBBBlueControl ${catkin_LIBRARIES} roboticscape)
+
+ add_executable(testBBBlueControlReverse src/testBBBlueControlReverse.cpp)
+ target_link_libraries(testBBBlueControlReverse ${catkin_LIBRARIES} roboticscape)
+
+#############
+## Install ##
+#############
+
+
+#############
+## Testing ##
+#############
+
