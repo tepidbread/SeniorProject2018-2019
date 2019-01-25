@@ -1,5 +1,5 @@
 % Sample script for simulating the modified BBBlue moving
-% to a line and following that line
+% to a line and following that line without ROS Matlab
 % Eric Jones 10/12/2018
 
 function lineFollowingExampleBBB
