@@ -6,16 +6,16 @@ Bradley University - Dept. of Electrical and Computer Engineering<br>
 
 ## ALL CODE in this repository is a work in progress and subject to change.<br>
 
-MATLAB
-* This folder contains the MATLAB scripts that run the server side code for our algorithms.
+MATLAB - This folder contains the MATLAB scripts that run the server side code for our algorithms.
 
-bin
+
+bin - This folder contains code we used to test ROS and no-ROS functionality for the line follower
 * noros
   * This folder contains some testing code in C++ that we used to test our system without ROS.
 * test
   * This folder contains testing code in C that we used to test our PID tuning outside of ROS.
 
-implement_test
+implement_test - This folder is a ROS package we have developed on the eduMOD.
 * include
   * This folder contains a temporary file just in case we need to use an additional library outside of librobotcontrol.
 * launch
