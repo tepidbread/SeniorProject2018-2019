@@ -6,6 +6,9 @@ Bradley University - Dept. of Electrical and Computer Engineering<br>
 
 ## ALL CODE in this repository is a work in progress and subject to change.<br>
 
+MATLAB
+* This folder contains the MATLAB scripts that run the server side code for our algorithms.
+
 bin
 * noros
   * This folder contains some testing code in C++ that we used to test our system without ROS.
