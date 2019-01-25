@@ -1,4 +1,4 @@
-# SeniorProject2018
+# SeniorProject2018-2019
 
 Dakota Adra and Eric Jones '19<br>
 Bradley University - Dept. of Electrical and Computer Engineering<br>
