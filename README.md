@@ -4,7 +4,7 @@ Dakota Adra and Eric Jones '19<br>
 Bradley University - Dept. of Electrical and Computer Engineering<br>
 1501 W Bradley Ave, Peoria, IL 61625 USA<br>
 
-## At this point, ALL CODE in this repository is a work in progress and subject to change.<br>
+## ALL CODE in this repository is a work in progress and subject to change.<br>
 
 bin
 * noros
